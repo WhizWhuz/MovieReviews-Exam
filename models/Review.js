@@ -16,11 +16,16 @@ const reviewSchema = new mongoose.Schema(
       type: Number,
       min: 1,
       max: 5,
-      required: true,
+      required: [true, "You must select a rating."],
     },
-    comment: String,
+    comment: {
+      type: String,
+      required: [true, "You must leave a comment."],
+    },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-module.exports = mongoose.model("Reviews", reviewsSchema);
+module.exports = mongoose.model("Reviews", reviewSchema);

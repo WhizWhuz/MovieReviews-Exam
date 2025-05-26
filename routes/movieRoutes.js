@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const movieControllers = require("../controllers/moviesControllers");
-const reviewController = require("../controllers/reviewController");
+const movieControllers = require("../controllers/movieControllers");
+const reviewController = require("../controllers/reviewControllers");
 const authMiddleware = require("../middlewares/authMiddleware");
 const isAdmin = require("../middlewares/isAdmin");
 

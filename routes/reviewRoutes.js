@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const reviewsControllers = require("../controllers/reviewsControllers");
+const reviewsControllers = require("../controllers/reviewControllers");
 
 router
   .route("/")
@@ -12,3 +12,5 @@ router
   .get(reviewsControllers.getMovieReviews)
   .put(reviewsControllers.updateReview)
   .delete(reviewsControllers.deleteReview);
+
+module.exports = router;
