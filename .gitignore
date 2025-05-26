@@ -1,0 +1,6 @@
+node_modules/
+frontend_node_modules/
+backend_node_modules/
+config.env
+.vscode/
+.DS-Store
