@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/user", userRoutes);
-app.use("/movies", moviesRoutes);
-app.use("/review", reviewRoutes);
+app.use("/movies", movieRoutes);
+app.use("/reviews", reviewRoutes);
 
 module.exports = app;
