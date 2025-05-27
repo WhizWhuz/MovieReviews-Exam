@@ -4,3 +4,4 @@ backend_node_modules/
 config.env
 .vscode/
 .DS-Store
+Render.md
