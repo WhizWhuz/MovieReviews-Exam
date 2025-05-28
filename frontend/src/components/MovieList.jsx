@@ -1,12 +1,32 @@
+import React, { useEffect, useState } from "react";
+import MovieItem from "./MovieItem";
 import styles from "./MovieList.module.scss";
 
-function MovieList() {
+const MovieList = () => {
+  const [movies, setMovies] = useState([]);
+
+  useEffect(() => {
+    const fetchMovies = async () => {
+      try {
+        const res = await fetch("/api/movies");
+        const data = await res.json();
+        setMovies(data.movies);
+      } catch (err) {
+        console.error("Failed to fetch movies", err);
+      }
+    };
+
+    fetchMovies();
+  }, []);
+
   return (
-    <div className={styles.list}>
-      <div className={styles.movie}>🎥 Blade of the Eternal</div>
-      <div className={styles.movie}>🎥 Dreams in Kyoto</div>
+    <div className={styles.container}>
+      <h1>🎥 Movie Library</h1>
+      {movies.map((movie) => (
+        <MovieItem key={movie._id} movie={movie} />
+      ))}
     </div>
   );
-}
+};
 
 export default MovieList;

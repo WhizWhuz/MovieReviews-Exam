@@ -1,0 +1,722 @@
+[
+  {
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "releaseYear": 2010,
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "releaseYear": 2001,
+    "genre": "Anime"
+  },
+  {
+    "title": "The Godfather",
+    "director": "Francis Ford Coppola",
+    "releaseYear": 1972,
+    "genre": "Crime"
+  },
+  {
+    "title": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "releaseYear": 1994,
+    "genre": "Drama"
+  },
+  {
+    "title": "Parasite",
+    "director": "Bong Joon-ho",
+    "releaseYear": 2019,
+    "genre": "Thriller"
+  },
+  {
+    "title": "My Neighbor Totoro",
+    "director": "Hayao Miyazaki",
+    "releaseYear": 1988,
+    "genre": "Family"
+  },
+  {
+    "title": "The Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "releaseYear": 1999,
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Avengers: Endgame",
+    "director": "Anthony Russo, Joe Russo",
+    "releaseYear": 2019,
+    "genre": "Superhero"
+  },
+  {
+    "title": "The Shining",
+    "director": "Stanley Kubrick",
+    "releaseYear": 1980,
+    "genre": "Horror"
+  },
+  {
+    "title": "Your Name",
+    "director": "Makoto Shinkai",
+    "releaseYear": 2016,
+    "genre": "Romance"
+  },
+  {
+    "title": "The Good, the Bad and the Ugly",
+    "director": "Sergio Leone",
+    "releaseYear": 1966,
+    "genre": "Western"
+  },
+  {
+    "title": "Shrek",
+    "director": "Andrew Adamson, Vicky Jenson",
+    "releaseYear": 2001,
+    "genre": "Animation"
+  },
+  {
+    "title": "Gladiator",
+    "director": "Ridley Scott",
+    "releaseYear": 2000,
+    "genre": "Historical"
+  },
+  {
+    "title": "A Silent Voice",
+    "director": "Naoko Yamada",
+    "releaseYear": 2016,
+    "genre": "Anime"
+  },
+  {
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "releaseYear": 2008,
+    "genre": "Action"
+  },
+  {
+    "title": "Monty Python and the Holy Grail",
+    "director": "Terry Gilliam, Terry Jones",
+    "releaseYear": 1975,
+    "genre": "Comedy"
+  },
+  {
+    "title": "Her",
+    "director": "Spike Jonze",
+    "releaseYear": 2013,
+    "genre": "Romantic Sci-Fi"
+  },
+  {
+    "title": "The Exorcist",
+    "director": "William Friedkin",
+    "releaseYear": 1973,
+    "genre": "Horror"
+  },
+  {
+    "title": "Neon Genesis Evangelion: The End of Evangelion",
+    "director": "Hideaki Anno, Kazuya Tsurumaki",
+    "releaseYear": 1997,
+    "genre": "Mecha"
+  },
+  {
+    "title": "Coco",
+    "director": "Lee Unkrich, Adrian Molina",
+    "releaseYear": 2017,
+    "genre": "Musical"
+  },
+  {
+    "title": "Shadow Empire",
+    "director": "Patty Jenkins",
+    "releaseYear": 2005,
+    "genre": "Mystery"
+  },
+  {
+    "title": "Lost Horizons",
+    "director": "Quentin Tarantino",
+    "releaseYear": 1997,
+    "genre": "Adventure"
+  },
+  {
+    "title": "Neon Skyline",
+    "director": "Sergio Leone",
+    "releaseYear": 1966,
+    "genre": "Adventure"
+  },
+  {
+    "title": "Whispers in the Dark",
+    "director": "Lana Wachowski",
+    "releaseYear": 2006,
+    "genre": "Anime"
+  },
+  {
+    "title": "Galactic Drift",
+    "director": "David Fincher",
+    "releaseYear": 2004,
+    "genre": "Western"
+  },
+  {
+    "title": "Paper Cranes",
+    "director": "Terry Gilliam",
+    "releaseYear": 2005,
+    "genre": "Horror"
+  },
+  {
+    "title": "City of Silence",
+    "director": "Ridley Scott",
+    "releaseYear": 1973,
+    "genre": "Musical"
+  },
+  {
+    "title": "Midnight Runner",
+    "director": "George Miller",
+    "releaseYear": 2015,
+    "genre": "Family"
+  },
+  {
+    "title": "The Forgotten Realm",
+    "director": "Christopher Nolan",
+    "releaseYear": 2021,
+    "genre": "Action"
+  },
+  {
+    "title": "Stars Align",
+    "director": "Makoto Shinkai",
+    "releaseYear": 1977,
+    "genre": "Historical"
+  },
+  {
+    "title": "Final Eclipse",
+    "director": "Terry Gilliam",
+    "releaseYear": 1991,
+    "genre": "Romantic Sci-Fi"
+  },
+  {
+    "title": "Digital Dreamscape",
+    "director": "George Miller",
+    "releaseYear": 1971,
+    "genre": "Anime"
+  },
+  {
+    "title": "The Phantom Code",
+    "director": "Bong Joon-ho",
+    "releaseYear": 1970,
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Jungle Ghosts",
+    "director": "Naoko Yamada",
+    "releaseYear": 1969,
+    "genre": "Horror"
+  },
+  {
+    "title": "Children of Ash",
+    "director": "Guillermo del Toro",
+    "releaseYear": 1962,
+    "genre": "Musical"
+  },
+  {
+    "title": "Echoes of Time",
+    "director": "Robert Zemeckis",
+    "releaseYear": 1985,
+    "genre": "Mecha"
+  },
+  {
+    "title": "Beyond the Mist",
+    "director": "Sergio Leone",
+    "releaseYear": 2016,
+    "genre": "Biography"
+  },
+  {
+    "title": "Frostbite",
+    "director": "Hayao Miyazaki",
+    "releaseYear": 1995,
+    "genre": "Mecha"
+  },
+  {
+    "title": "Crimson Dawn",
+    "director": "Lee Unkrich",
+    "releaseYear": 1985,
+    "genre": "Western"
+  },
+  {
+    "title": "Silent Sonata",
+    "director": "Jordan Peele",
+    "releaseYear": 2013,
+    "genre": "Comedy"
+  },
+  {
+    "title": "The Glass Maze",
+    "director": "George Miller",
+    "releaseYear": 1970,
+    "genre": "Family"
+  },
+  {
+    "title": "Sunken Truth",
+    "director": "Quentin Tarantino",
+    "releaseYear": 1976,
+    "genre": "Family"
+  },
+  {
+    "title": "Iron Legacy",
+    "director": "James Cameron",
+    "releaseYear": 1997,
+    "genre": "Comedy"
+  },
+  {
+    "title": "Velvet Chains",
+    "director": "Martin Scorsese",
+    "releaseYear": 2012,
+    "genre": "Animation"
+  },
+  {
+    "title": "The Last Spark",
+    "director": "Bong Joon-ho",
+    "releaseYear": 1960,
+    "genre": "Drama"
+  },
+  {
+    "title": "Azure Blades",
+    "director": "Andrew Adamson",
+    "releaseYear": 1994,
+    "genre": "Romantic Sci-Fi"
+  },
+  {
+    "title": "Titanium Soul",
+    "director": "Denis Villeneuve",
+    "releaseYear": 1965,
+    "genre": "Sport"
+  },
+  {
+    "title": "Skybreaker",
+    "director": "Greta Gerwig",
+    "releaseYear": 2021,
+    "genre": "Romance"
+  },
+  {
+    "title": "Moonfire",
+    "director": "Lee Unkrich",
+    "releaseYear": 1979,
+    "genre": "Superhero"
+  },
+  {
+    "title": "Seraph's Fall",
+    "director": "Peter Jackson",
+    "releaseYear": 2021,
+    "genre": "Comedy"
+  },
+  {
+    "title": "Obsidian Shore",
+    "director": "Lana Wachowski",
+    "releaseYear": 1963,
+    "genre": "Drama"
+  },
+  {
+    "title": "Pulse",
+    "director": "Martin Scorsese",
+    "releaseYear": 1960,
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Retrograde",
+    "director": "George Miller",
+    "releaseYear": 1975,
+    "genre": "Historical"
+  },
+  {
+    "title": "Luminous Depths",
+    "director": "Satoshi Kon",
+    "releaseYear": 1998,
+    "genre": "Documentary"
+  },
+  {
+    "title": "Veil of Shadows",
+    "director": "Taika Waititi",
+    "releaseYear": 1960,
+    "genre": "Drama"
+  },
+  {
+    "title": "Fire Lotus",
+    "director": "Hayao Miyazaki",
+    "releaseYear": 1984,
+    "genre": "Musical"
+  },
+  {
+    "title": "Infinite Divide",
+    "director": "Steven Spielberg",
+    "releaseYear": 2006,
+    "genre": "Biography"
+  },
+  {
+    "title": "Memory Loop",
+    "director": "Wes Anderson",
+    "releaseYear": 2018,
+    "genre": "Superhero"
+  },
+  {
+    "title": "Noir Halo",
+    "director": "Stanley Kubrick",
+    "releaseYear": 2020,
+    "genre": "Romance"
+  },
+  {
+    "title": "Blade Chorus",
+    "director": "Satoshi Kon",
+    "releaseYear": 1964,
+    "genre": "Fantasy"
+  },
+  {
+    "title": "White Dagger",
+    "director": "Terry Gilliam",
+    "releaseYear": 1983,
+    "genre": "War"
+  },
+  {
+    "title": "Radiant Path",
+    "director": "David Fincher",
+    "releaseYear": 1969,
+    "genre": "Superhero"
+  },
+  {
+    "title": "Death Waltz",
+    "director": "Jordan Peele",
+    "releaseYear": 2015,
+    "genre": "Anime"
+  },
+  {
+    "title": "Stormborn",
+    "director": "Robert Zemeckis",
+    "releaseYear": 1970,
+    "genre": "Musical"
+  },
+  {
+    "title": "Starry Labyrinth",
+    "director": "Terry Gilliam",
+    "releaseYear": 1996,
+    "genre": "Anime"
+  },
+  {
+    "title": "Cradle of Storms",
+    "director": "Robert Zemeckis",
+    "releaseYear": 2021,
+    "genre": "Musical"
+  },
+  {
+    "title": "Ebon Reign",
+    "director": "Jordan Peele",
+    "releaseYear": 1973,
+    "genre": "Mystery"
+  },
+  {
+    "title": "Dream Circuit",
+    "director": "George Miller",
+    "releaseYear": 1974,
+    "genre": "Musical"
+  },
+  {
+    "title": "Aether Gate",
+    "director": "Robert Zemeckis",
+    "releaseYear": 1960,
+    "genre": "Crime"
+  },
+  {
+    "title": "Violet Requiem",
+    "director": "George Miller",
+    "releaseYear": 2000,
+    "genre": "Romantic Sci-Fi"
+  },
+  {
+    "title": "Mecha Zero",
+    "director": "Kathryn Bigelow",
+    "releaseYear": 2016,
+    "genre": "Superhero"
+  },
+  {
+    "title": "Samurai Heart",
+    "director": "Spike Jonze",
+    "releaseYear": 1975,
+    "genre": "Documentary"
+  },
+  {
+    "title": "Chrono Knights",
+    "director": "Bong Joon-ho",
+    "releaseYear": 1961,
+    "genre": "Family"
+  },
+  {
+    "title": "War of Echoes",
+    "director": "Guillermo del Toro",
+    "releaseYear": 1980,
+    "genre": "Anime"
+  },
+  {
+    "title": "Alien Sonata",
+    "director": "Greta Gerwig",
+    "releaseYear": 2024,
+    "genre": "Historical"
+  },
+  {
+    "title": "Destiny Pulse",
+    "director": "Wes Anderson",
+    "releaseYear": 1997,
+    "genre": "Thriller"
+  },
+  {
+    "title": "Ethernauts",
+    "director": "Andrew Adamson",
+    "releaseYear": 1976,
+    "genre": "Biography"
+  },
+  {
+    "title": "Digital Saints",
+    "director": "Bong Joon-ho",
+    "releaseYear": 1997,
+    "genre": "Drama"
+  },
+  {
+    "title": "Quantum Rift",
+    "director": "Peter Jackson",
+    "releaseYear": 1984,
+    "genre": "Horror"
+  },
+  {
+    "title": "Immortal March",
+    "director": "Makoto Shinkai",
+    "releaseYear": 2020,
+    "genre": "Documentary"
+  },
+  {
+    "title": "Cyber Vow",
+    "director": "Taika Waititi",
+    "releaseYear": 1986,
+    "genre": "Thriller"
+  },
+  {
+    "title": "Burning Eden",
+    "director": "Ridley Scott",
+    "releaseYear": 1974,
+    "genre": "Action"
+  },
+  {
+    "title": "Neon Grace",
+    "director": "Lana Wachowski",
+    "releaseYear": 1970,
+    "genre": "Biography"
+  },
+  {
+    "title": "Night Mirage",
+    "director": "Steven Spielberg",
+    "releaseYear": 1996,
+    "genre": "Romance"
+  },
+  {
+    "title": "Cursed Alloy",
+    "director": "James Cameron",
+    "releaseYear": 1971,
+    "genre": "Historical"
+  },
+  {
+    "title": "Electric Truth",
+    "director": "Denis Villeneuve",
+    "releaseYear": 2020,
+    "genre": "Adventure"
+  },
+  {
+    "title": "Astral Chain",
+    "director": "Taika Waititi",
+    "releaseYear": 2003,
+    "genre": "Biography"
+  },
+  {
+    "title": "Voidwalker",
+    "director": "Taika Waititi",
+    "releaseYear": 1969,
+    "genre": "Crime"
+  },
+  {
+    "title": "Phoenix Gaze",
+    "director": "Christopher Nolan",
+    "releaseYear": 1997,
+    "genre": "Musical"
+  },
+  {
+    "title": "Solar Grave",
+    "director": "Ridley Scott",
+    "releaseYear": 1985,
+    "genre": "Anime"
+  },
+  {
+    "title": "Grim Network",
+    "director": "Stanley Kubrick",
+    "releaseYear": 2008,
+    "genre": "Comedy"
+  },
+  {
+    "title": "Final Regret",
+    "director": "Steven Spielberg",
+    "releaseYear": 1981,
+    "genre": "Action"
+  },
+  {
+    "title": "Twilight Fuel",
+    "director": "Patty Jenkins",
+    "releaseYear": 1972,
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Broken Rift",
+    "director": "Jordan Peele",
+    "releaseYear": 1962,
+    "genre": "Sport"
+  },
+  {
+    "title": "Masked Domain",
+    "director": "Greta Gerwig",
+    "releaseYear": 1983,
+    "genre": "Musical"
+  },
+  {
+    "title": "River of Steel",
+    "director": "Steven Spielberg",
+    "releaseYear": 1973,
+    "genre": "Superhero"
+  },
+  {
+    "title": "Flare Outcast",
+    "director": "Bong Joon-ho",
+    "releaseYear": 1995,
+    "genre": "Anime"
+  },
+  {
+    "title": "Black Lotus",
+    "director": "Spike Jonze",
+    "releaseYear": 2002,
+    "genre": "Crime"
+  },
+  {
+    "title": "Prism War",
+    "director": "Lee Unkrich",
+    "releaseYear": 2006,
+    "genre": "Anime"
+  },
+  {
+    "title": "Feral Grace",
+    "director": "Christopher Nolan",
+    "releaseYear": 1991,
+    "genre": "Action"
+  },
+  {
+    "title": "Hearts in Collision",
+    "director": "Peter Jackson",
+    "releaseYear": 2015,
+    "genre": "Historical"
+  },
+  {
+    "title": "Dream Drifters",
+    "director": "Jordan Peele",
+    "releaseYear": 1997,
+    "genre": "Musical"
+  },
+  {
+    "title": "Scarlet Halo",
+    "director": "Hayao Miyazaki",
+    "releaseYear": 2022,
+    "genre": "Comedy"
+  },
+  {
+    "title": "Crimson Proxy",
+    "director": "Quentin Tarantino",
+    "releaseYear": 1992,
+    "genre": "Animation"
+  },
+  {
+    "title": "The Wanderers",
+    "director": "Jordan Peele",
+    "releaseYear": 2019,
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Winds of Radiance",
+    "director": "Andrew Adamson",
+    "releaseYear": 2006,
+    "genre": "Romance"
+  },
+  {
+    "title": "Mirrored Lies",
+    "director": "Patty Jenkins",
+    "releaseYear": 1993,
+    "genre": "Romantic Sci-Fi"
+  },
+  {
+    "title": "Rogue Bloom",
+    "director": "Sergio Leone",
+    "releaseYear": 2003,
+    "genre": "Thriller"
+  },
+  {
+    "title": "Neon Sovereign",
+    "director": "Stanley Kubrick",
+    "releaseYear": 1994,
+    "genre": "Western"
+  },
+  {
+    "title": "Digital Oracle",
+    "director": "Naoko Yamada",
+    "releaseYear": 1992,
+    "genre": "Romantic Sci-Fi"
+  },
+  {
+    "title": "Starshade",
+    "director": "Spike Jonze",
+    "releaseYear": 1977,
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Chrono Bloom",
+    "director": "Ridley Scott",
+    "releaseYear": 1966,
+    "genre": "Biography"
+  },
+  {
+    "title": "Vortex Cell",
+    "director": "Taika Waititi",
+    "releaseYear": 2003,
+    "genre": "Documentary"
+  },
+  {
+    "title": "Steel Harmony",
+    "director": "George Miller",
+    "releaseYear": 1982,
+    "genre": "Superhero"
+  },
+  {
+    "title": "Dawnbreaker",
+    "director": "Terry Gilliam",
+    "releaseYear": 1988,
+    "genre": "Western"
+  },
+  {
+    "title": "Forgotten Runes",
+    "director": "Spike Jonze",
+    "releaseYear": 1962,
+    "genre": "Horror"
+  },
+  {
+    "title": "Silent Reboot",
+    "director": "Lana Wachowski",
+    "releaseYear": 1971,
+    "genre": "Comedy"
+  },
+  {
+    "title": "Pulse Horizon",
+    "director": "Taika Waititi",
+    "releaseYear": 2016,
+    "genre": "Anime"
+  },
+  {
+    "title": "Fate Encoded",
+    "director": "David Fincher",
+    "releaseYear": 1973,
+    "genre": "Romance"
+  },
+  {
+    "title": "Twilight Circuit",
+    "director": "Greta Gerwig",
+    "releaseYear": 1979,
+    "genre": "Sport"
+  }
+]

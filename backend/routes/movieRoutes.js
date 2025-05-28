@@ -16,6 +16,8 @@ router
   .put(authMiddleware, isAdmin, movieControllers.updateMovie)
   .delete(authMiddleware, isAdmin, movieControllers.deleteMovie);
 
+router.get("/slug/:slug", movieControllers.getMovieBySlug);
+
 router.route("/:id/reviews").get(reviewController.getMovieReviews);
 
 module.exports = router;

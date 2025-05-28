@@ -77,3 +77,14 @@ exports.deleteMovie = async (req, res) => {
     return sendError(res, 500, err.message);
   }
 };
+
+//? GET - Get Movie with Slugify
+exports.getMovieBySlug = async (req, res) => {
+  try {
+    const movie = await Movie.findOne({ slug: req.params.slug });
+    if (!movie) return sendError(res, 404, "Movie not found.");
+    return sendSuccess(res, 200, "Movie fetched", { movie });
+  } catch (err) {
+    return sendError(res, 500, err.message);
+  }
+};
