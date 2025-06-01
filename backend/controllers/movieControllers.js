@@ -25,8 +25,50 @@ exports.addMovie = async (req, res) => {
 //? GET - Get all movies
 exports.getMovies = async (req, res) => {
   try {
-    const movies = await Movie.find();
-    return sendSuccess(res, 200, "Movie fetched", { movies });
+    const { genre, sort, title, page = 1, limit = 10 } = req.query;
+
+    const matchStage = {};
+
+    if (genre) matchStage.genre = genre;
+    if (title) matchStage.title = { $regex: title, $options: "i" }; // case-insensitive search
+
+    const movies = await Movie.aggregate([
+      { $match: matchStage },
+      {
+        $lookup: {
+          from: "reviews",
+          localField: "_id",
+          foreignField: "movieId",
+          as: "reviews",
+        },
+      },
+      {
+        $addFields: {
+          averageRating: {
+            $ifNull: [{ $avg: "$reviews.rating" }, 0],
+          },
+        },
+      },
+      {
+        $project: {
+          title: 1,
+          director: 1,
+          releaseYear: 1,
+          genre: 1,
+          averageRating: { $round: ["$averageRating", 1] },
+          description: 1, // include this now!
+        },
+      },
+      ...(sort === "rating"
+        ? [{ $sort: { averageRating: -1 } }]
+        : sort === "year"
+        ? [{ $sort: { releaseYear: -1 } }]
+        : []),
+      { $skip: (parseInt(page) - 1) * parseInt(limit) },
+      { $limit: parseInt(limit) },
+    ]);
+
+    return sendSuccess(res, 200, "Movies fetched", { movies });
   } catch (err) {
     return sendError(res, 500, err.message);
   }

@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
-import styles from './Reviews.module.scss';
-import ReviewCard from '../components/ReviewCard';
+import { useEffect, useState } from "react";
+import styles from "./Reviews.module.scss";
+import ReviewCard from "../components/ReviewCard";
 
 function Reviews() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch('/reviews')
+    fetch("/api/reviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data.reviews || data); // handle both shapes
       })
-      .catch((err) => console.error('Failed to fetch reviews:', err));
+      .catch((err) => console.error("Failed to fetch reviews:", err));
   }, []);
 
   return (
