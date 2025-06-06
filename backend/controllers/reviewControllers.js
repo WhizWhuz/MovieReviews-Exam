@@ -53,7 +53,7 @@ exports.getReviewDetails = async (req, res) => {
   }
 };
 
-//^ GET - Get Review Details
+//^ PUT - Update Review Details
 exports.updateReview = async (req, res) => {
   const { id } = req.params;
   const { rating, comment } = req.body;

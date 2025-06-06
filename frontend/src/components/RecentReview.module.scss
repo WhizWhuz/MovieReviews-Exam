@@ -1,0 +1,23 @@
+.card {
+  background-color: #1e1e1e;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.rating {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.comment {
+  font-style: italic;
+  color: #ddd;
+}
+
+.userId {
+  font-size: 0.75rem;
+  color: #888;
+}

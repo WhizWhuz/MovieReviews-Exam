@@ -1,10 +1,25 @@
 import { useState } from "react";
 import MovieItem from "./MovieItem";
 import styles from "./MovieList.module.scss";
+import RecentReview from "./RecentReview";
 import { motion, AnimatePresence } from "framer-motion";
+import axios from "axios";
 
 const MovieList = ({ movies = [] }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [reviews, setReviews] = useState([]);
+
+  const handleSelectMovie = async (movie) => {
+    setSelectedMovie(movie);
+
+    try {
+      const res = await axios.get(`/api/reviews/${movie._id}`);
+
+      setReviews(res.data.reviews); // contains comment, rating, and username
+    } catch (err) {
+      console.error("Failed to fetch reviews:", err);
+    }
+  };
 
   return (
     <div className={styles.container}>
@@ -15,7 +30,7 @@ const MovieList = ({ movies = [] }) => {
           <MovieItem
             key={movie._id}
             movie={movie}
-            onSelect={setSelectedMovie}
+            onSelect={handleSelectMovie}
           />
         ))
       ) : (
@@ -55,6 +70,14 @@ const MovieList = ({ movies = [] }) => {
                     {selectedMovie.description || "No description available."}
                   </p>
                 </div>
+                {reviews.length > 0 && (
+                  <div className={styles.reviewsSection}>
+                    <h3>🎴 Reviews:</h3>
+                    {reviews.map((review) => (
+                      <RecentReview key={review._id} review={review} />
+                    ))}
+                  </div>
+                )}
               </div>
               <button
                 className={styles.closeBtn}
