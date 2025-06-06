@@ -4,6 +4,7 @@ const MovieFilter = ({ genre, setGenre, sort, setSort }) => {
   return (
     <div className={styles.filterContainer}>
       <select value={genre} onChange={(e) => setGenre(e.target.value)}>
+        <option value="">All Genres</option>
         <option value="Action">Action</option>
         <option value="Adventure">Adventure</option>
         <option value="Comedy">Comedy</option>

@@ -20,6 +20,10 @@ const movieSchema = new mongoose.Schema(
       type: Number,
       required: [true, "You must add a release year."],
     },
+    description: {
+      type: String,
+      required: true,
+    },
     genre: {
       type: String,
       required: [true, "You must select a genre."],

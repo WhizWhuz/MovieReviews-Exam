@@ -1,20 +1,30 @@
+@import "../styles/mixins.scss";
+
 .nav {
   background: #222;
   padding: 1rem 2rem;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .logo {
   font-size: 1.5rem;
+  display: flex;
+  font-size: 32px;
+  margin-left: 46.5rem;
 }
 
 .links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 4.5rem;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
 
   a {
     color: white;
@@ -24,4 +34,21 @@
       text-decoration: underline;
     }
   }
+}
+
+.loginButton {
+  @include flashy-button;
+  font-size: 0.9rem; // optionally fine-tune for nav use
+  padding: 1em 2.5em;
+  background-color: #000000; // adjust from full black if desired
+  border: none;
+}
+
+.logoutBtn {
+  @include flashy-button;
+  font-size: 0.9rem; // optionally fine-tune for nav use
+  padding: 1em 2.5em;
+  background-color: #000000; // adjust from full black if desired
+  border: none;
+  background-color: none;
 }

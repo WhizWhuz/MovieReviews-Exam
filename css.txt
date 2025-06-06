@@ -1,0 +1,2 @@
+no sprite, no JS heart animation - click it!
+https://codepen.io/thebabydino/pen/RRRRZE

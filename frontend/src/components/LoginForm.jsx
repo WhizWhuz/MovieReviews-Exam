@@ -1,16 +1,17 @@
 import { useState } from "react";
 import styles from "./LoginForm.module.scss";
+import { useNavigate } from "react-router-dom";
+import LoginButton from "./LoginButton"; // adjust path if needed
 
-function LoginForm() {
+function LoginForm({ setIsLoggedIn }) {
+  const navigate = useNavigate();
   const [form, setForm] = useState({ username: "", password: "" });
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
+  const handleLoginClick = async () => {
     try {
       const res = await fetch("/api/user/login", {
         method: "POST",
@@ -21,9 +22,15 @@ function LoginForm() {
       const data = await res.json();
 
       if (res.ok) {
-        localStorage.setItem("token", data.token); // ✅ store token here
-        alert("Welcome back, warrior!");
-        // Optional: navigate to /add-movie or /
+        // ⚠️ Let animation run FIRST
+        setTimeout(() => {
+          localStorage.setItem("token", data.token);
+          setIsLoggedIn(true);
+          navigate("/reviews");
+        }, 3500); // start delay *after paint*, minimum async wait
+
+        // This delay is to keep user on the same page for 3.5s
+        await new Promise((resolve) => setTimeout(resolve, 3500));
       } else {
         alert(data.message || "Login failed.");
       }
@@ -33,7 +40,7 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.form}>
+    <form className={styles.form}>
       <input
         name="username"
         type="text"
@@ -50,9 +57,7 @@ function LoginForm() {
         onChange={handleChange}
         className={styles.input}
       />
-      <button type="submit" className={styles.button}>
-        Login
-      </button>
+      <LoginButton onClick={handleLoginClick} />
     </form>
   );
 }

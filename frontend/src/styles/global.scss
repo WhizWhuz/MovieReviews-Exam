@@ -1,0 +1,28 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default body margin */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #434343;
+}
+
+a,
+li,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 0;
+}

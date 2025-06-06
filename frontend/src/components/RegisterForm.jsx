@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./RegisterForm.module.scss";
 import { useNavigate } from "react-router-dom";
 
-function RegisterForm() {
+function RegisterForm({ setIsLoggedIn }) {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({
@@ -30,7 +30,7 @@ function RegisterForm() {
       if (res.ok) {
         localStorage.setItem("token", data.token);
         alert("Registration successful!");
-
+        setIsLoggedIn(true);
         // ✅ Redirect to home
         navigate("/");
       } else {

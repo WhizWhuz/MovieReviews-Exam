@@ -6,15 +6,31 @@ import AddMovie from "./pages/AddMovie";
 import NavBar from "./components/NavBar";
 import ProtectedRoute from "./components/protectedRoute";
 import Register from "./pages/Register";
+import { useState } from "react";
+import MovieListPage from "./pages/MovieListPage";
+import Footer from "./components/Footer";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
+
   return (
     <>
-      <NavBar />
+      <NavBar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route
+          path="/login"
+          element={
+            <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+          }
+        />
+        <Route
+          path="/register"
+          element={
+            <Register isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+          }
+        />
+        <Route path="/movie-list" element={<MovieListPage />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route
           path="/add-movie"
@@ -25,6 +41,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </>
   );
 }

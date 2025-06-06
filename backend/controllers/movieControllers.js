@@ -6,7 +6,7 @@ const sendError = require("../utils/sendError");
 exports.addMovie = async (req, res) => {
   const { title, director, releaseYear, genre } = req.body;
 
-  if (!title || !director || !releaseYear || !genre) {
+  if (!title || !director || !releaseYear || !genre || !description) {
     return sendError(res, 500, "Missing required fields.");
   }
   try {
@@ -15,6 +15,7 @@ exports.addMovie = async (req, res) => {
       director,
       releaseYear,
       genre,
+      description,
     });
     return sendSuccess(res, 201, { movie });
   } catch (err) {
@@ -25,12 +26,15 @@ exports.addMovie = async (req, res) => {
 //? GET - Get all movies
 exports.getMovies = async (req, res) => {
   try {
-    const { genre, sort, title, page = 1, limit = 10 } = req.query;
+    const { genre, sort, title } = req.query;
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 25;
 
     const matchStage = {};
+    if (genre) matchStage.genre = { $in: [genre] };
+    if (title) matchStage.title = { $regex: title, $options: "i" };
 
-    if (genre) matchStage.genre = genre;
-    if (title) matchStage.title = { $regex: title, $options: "i" }; // case-insensitive search
+    const total = await Movie.countDocuments(matchStage);
 
     const movies = await Movie.aggregate([
       { $match: matchStage },
@@ -56,7 +60,7 @@ exports.getMovies = async (req, res) => {
           releaseYear: 1,
           genre: 1,
           averageRating: { $round: ["$averageRating", 1] },
-          description: 1, // include this now!
+          description: 1,
         },
       },
       ...(sort === "rating"
@@ -64,11 +68,21 @@ exports.getMovies = async (req, res) => {
         : sort === "year"
         ? [{ $sort: { releaseYear: -1 } }]
         : []),
-      { $skip: (parseInt(page) - 1) * parseInt(limit) },
-      { $limit: parseInt(limit) },
+      { $skip: (page - 1) * limit },
+      { $limit: limit },
     ]);
 
-    return sendSuccess(res, 200, "Movies fetched", { movies });
+    return sendSuccess(res, 200, "Movies fetched", {
+      data: {
+        movies,
+        pagination: {
+          total,
+          page,
+          limit,
+          totalPages: Math.ceil(total / limit),
+        },
+      },
+    });
   } catch (err) {
     return sendError(res, 500, err.message);
   }
